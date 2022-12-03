@@ -4,6 +4,13 @@ import AddToCartButton from "./AddToCartButton";
 
 
 function CardItems(props) {
+
+  function handleAddClick(){
+    props.addToCart({
+      title: props.title,
+      price: props.price
+    })
+  }
  
   return (
     <div className="pb-5 ">
@@ -17,7 +24,7 @@ function CardItems(props) {
           <p className="card-text product-price">{props.price}</p>
           </div>
           <div className="pt-3 d-flex justify-content-center">
-            <AddToCartButton/>
+            <AddToCartButton onClick={handleAddClick}/>
           </div>
         </div>
       </div>

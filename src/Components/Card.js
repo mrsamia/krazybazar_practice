@@ -9,7 +9,7 @@ function Card(props) {
       {data.map((e) => {
         return(
             <div className="col-sm-12 col-md-6 col-lg-3">
-            <CardItems title={e.title} amount={e.amount} stock={e.stock}  price={e.price}/>
+            <CardItems addToCart={props.addToCart} title={e.title} amount={e.amount} stock={e.stock}  price={e.price}/>
           </div>  
         )
        

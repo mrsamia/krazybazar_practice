@@ -13,7 +13,16 @@ function Cartbtn(props) {
             <BlackBoldText name="Cart 1 Items" />
           </div>
         </div>
-
+        <div>
+          {props.items.map(item => {
+            return(
+              <div>
+                <p>{item.title}</p>
+                <p>{item.price}</p>
+              </div>
+            )
+          })}
+        </div>
         <div className="w-100" style={{ position: "absolute", bottom: 0 }}>
           <div>
             <p className="order-alart">
