@@ -9,11 +9,12 @@
     background-color: #F8D323;
 }
 .icon-white-rounded-bg {
-    position: relative;
+    position: absolute;
     height: 50px;
     width: 50px;
     background-color: white;
     border-radius: 50%;
+    right: 0;
 }
 .counter{
     position: absolute;
@@ -80,11 +81,71 @@
 }
 .cart-button{
     color: #FFFFFF;
-    background: #57565C;
-    border-radius: 25px;
+    background: #57565C!important;
+    border-radius: 25px!important;
     width: 164px;
     text-align: center;
     padding: 8px 30px;
     font-size: 0.875rem;
+    border: none!important;
+}
+.category-name{
+    font-size: 1.125rem;
+    color: #3F3679;
+    font-weight: 500;
+}
+.category-link{
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #0CC5B7;
+}
+
+.right{
+    
+    width: 380px!important;
+    right: 0!important;
+}
+.modal-footerWrapper{
+    position: relative;
+}
+.pickup-btn{
+    background-color: #54Ac44;
+    color: white;
     border: none;
+    width: 100%;
+    /* margin-left: -16px; */
+    margin-bottom: -4px;
+    height: 60px;
+    width: 100%;
+    font-weight: 500;
+}
+.click-collect-btn{
+    background-color: #F8D323;
+    border: none;
+    height: 60px;
+    width: 100%;
+    font-weight: 500;
+    /* margin-right: -16px; */
+}
+.black-bold-text{
+    font-weight: 700;
+    font-size:  0.9375rem;
+}
+.order-alart{
+    color: #dc3545;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.modal-header{
+    background-color: #F8D323;
+    padding: 5px!important;
+}
+.cartWrapper{
+    width: 380px;
+    position: absolute;
+    right: 0;
+    top: 90px;
+    background-color: white;
+    box-shadow: 0px 2px 2px 1px rgb(199 199 199);
+    height:100vh;
 }
