@@ -3,6 +3,7 @@ import BlackBoldText from "./BlackBoldText";
 import Buton from "./Buton";
 import HomeDelivery from "../Images/home-delivery-icon.svg";
 import ClickCollect from "../Images/click-collect-icon.svg";
+import CartInnerPart from "./CartInnerPart";
 
 function Cartbtn(props) {
   return (
@@ -17,8 +18,10 @@ function Cartbtn(props) {
           {props.items.map(item => {
             return(
               <div>
-                <p>{item.title}</p>
-                <p>{item.price}</p>
+                <CartInnerPart 
+                title={item.title}
+                price={item.price}
+                />
               </div>
             )
           })}

@@ -6,6 +6,7 @@ import SectionHeader from "./Components/SectionHeader";
 import Cartbtn from "./Components/Cartbtn";
 import Accordion from "./Components/AddToCartButton";
 import { useState } from "react";
+import Increment from "./Components/Increment";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -22,7 +23,8 @@ function App() {
         <Card addToCart={addToCart}/>
         {cart.length > 0 && <Cartbtn items={cart}/>}
       </div>
-      <Accordion/>
+    <Increment/>
+   
     </div>
   );
 }
