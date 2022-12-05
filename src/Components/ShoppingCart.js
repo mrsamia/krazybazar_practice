@@ -3,9 +3,10 @@ import BlackBoldText from "./BlackBoldText";
 import Buton from "./Buton";
 import HomeDelivery from "../Images/home-delivery-icon.svg";
 import ClickCollect from "../Images/click-collect-icon.svg";
+import data from "./CardData";
 import CartInnerPart from "./CartInnerPart";
 
-function Cartbtn(props) {
+function ShoppingCart(props) {
   return (
     <>
       <div className="cartWrapper ">
@@ -15,16 +16,14 @@ function Cartbtn(props) {
           </div>
         </div>
         <div>
-          {props.items.map(item => {
-            return(
-              <div>
-                <CartInnerPart 
-                title={item.title}
-                price={item.price}
-                />
-              </div>
-            )
-          })}
+          {
+            data.map((item)=>{
+              return(
+                <CartInnerPart title={item.title}
+                price={item.price}/>
+              )
+            })
+          }
         </div>
         <div className="w-100" style={{ position: "absolute", bottom: 0 }}>
           <div>
@@ -57,4 +56,4 @@ function Cartbtn(props) {
   );
 }
 
-export default Cartbtn;
+export default ShoppingCart;
