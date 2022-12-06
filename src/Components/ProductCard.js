@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import AddToCartButton from "./AddToCartButton";
 import data from "./CardData";
 import pic1 from "../Images/1.jpg";
@@ -10,31 +10,48 @@ function ProductCard(props) {
   const [cart, setCart] = useState({
     isOpen: false,
     ShoppingCart: [],
-    isQuantity:0
+    isQuantity: 0,
   });
 
   // const addToCartHandler = (product) => {
-    
+
   //   setCart({ ...cart, ShoppingCart: [...cart.ShoppingCart, product] });
   //   if (!cart.isOpen) {
   //     setCart({ ...cart, isOpen: true });
   //   }
   // };
+
   const addToCartHandler = (product) => {
     //already in shop cart
-    console.log(cart.ShoppingCart);
+   
+    // console.log(cart.ShoppingCart, "aita amar current shopping cart");
+   
+    // debugger;
+
     if (!cart.isOpen) {
       setCart({ ...cart, isOpen: true });
     }
     setCart((state) => {
-      return {
-        ...state, ShoppingCart: [...cart.ShoppingCart, product]
-      } 
-  });
 
- 
+      for(let item=0; item < cart.ShoppingCart.length ; item++){
+        console.log(cart.ShoppingCart[item])
+      }
+      return {
+        ...state,
+        ShoppingCart: [...cart.ShoppingCart, product],
+      };
+    });
+
   };
- 
+
+  
+  useEffect(() => {
+    
+    console.log(cart.ShoppingCart,"aita amar current shopping cart");
+    
+  }, [cart])
+  
+
   return (
     <div className="container">
       <div className="row">
@@ -56,7 +73,7 @@ function ProductCard(props) {
                   >
                     Add to Cart
                   </button>
-                  <div>{cart.isOpen ? <ShoppingCart />:"" }</div>
+                  <div>{cart.isOpen ? <ShoppingCart /> : ""}</div>
                 </div>
               </div>
             </div>
