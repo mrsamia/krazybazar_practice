@@ -8,6 +8,7 @@ import SectionHeader from "./Components/SectionHeader";
 // import Increment from "./Components/Increment";
 import ProductCard from "./Components/ProductCard";
 import ShoppingCart from "./Components/ShoppingCart";
+import Practice from "./Components/Practice";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <SectionHeader name="Special Offer" title="View All"/>
         <ProductCard/>
         {/* <ShoppingCart/> */}
+        <Practice/>
      
       </div>
     </div>

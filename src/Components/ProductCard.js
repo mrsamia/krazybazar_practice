@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import data from "./CardData";
 import pic1 from "../Images/1.jpg";
 import ShoppingCart from "./ShoppingCart";
-import CartInnerPart from "./CartInnerPart";
+// import CartInnerPart from "./CartInnerPart";
 // import CardItems from "./CardItems";
 
 function ProductCard(props) {
