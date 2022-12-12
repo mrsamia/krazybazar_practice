@@ -8,7 +8,9 @@ import SectionHeader from "./Components/SectionHeader";
 // import Increment from "./Components/Increment";
 import ProductCard from "./Components/ProductCard";
 import ShoppingCart from "./Components/ShoppingCart";
-import Practice from "./Components/Practice";
+import Practice from "./Practice/Practice";
+import MultistepForm from "./Practice/MultistepForm";
+import MultistepFromTwo from "./Practice/MultistepFromTwo";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <ProductCard/>
         {/* <ShoppingCart/> */}
         <Practice/>
+        <MultistepForm/>
+        <MultistepFromTwo/>
      
       </div>
     </div>
