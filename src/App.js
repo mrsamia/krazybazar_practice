@@ -11,6 +11,10 @@ import ShoppingCart from "./Components/ShoppingCart";
 import Practice from "./Practice/Practice";
 import MultistepForm from "./Practice/MultistepForm";
 import MultistepFromTwo from "./Practice/MultistepFromTwo";
+import Increment from "./Practice/Increment";
+import Multiplication from "./Practice/Multiplication";
+import MultiplicationBtn from "./Practice/MultiplicationBtn";
+import InputForm from "./Practice/InputForm";
 
 function App() {
   return (
@@ -23,6 +27,10 @@ function App() {
         <Practice/>
         <MultistepForm/>
         <MultistepFromTwo/>
+        <Increment/>
+        <Multiplication/>
+        <InputForm/>
+        <MultiplicationBtn/>
      
       </div>
     </div>

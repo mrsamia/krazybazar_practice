@@ -3,7 +3,9 @@ import React from "react";
 function StepOne(props) {
   return (
     <div class="tab">
-        Name:
+      {/* <h6>Step One</h6> */}
+      <div>
+      Name:
         <p>
           <input
             placeholder="First name..."
@@ -18,6 +20,7 @@ function StepOne(props) {
             name="lname"
           />
         </p>
+      </div>
       </div>
   );
 }
