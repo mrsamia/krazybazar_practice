@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 function MultiplicationBtn(props) {
   const value= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-//   const convertnum = parseInt();
-
   const[form,setForm]=useState(0)
 
 //   function clickHandler() {
@@ -30,7 +28,6 @@ function MultiplicationBtn(props) {
         {value.map((item) => (
             
           <p>
-            {/* {typeof form} */}
             {item} * {form} = {item * form }
           </p>
         ))}
