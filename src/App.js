@@ -15,6 +15,7 @@ import Increment from "./Practice/Increment";
 import Multiplication from "./Practice/Multiplication";
 import MultiplicationBtn from "./Practice/MultiplicationBtn";
 import InputForm from "./Practice/InputForm";
+import MultiplicationTwo from "./Practice/MultiplicationTwo";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Multiplication/>
         <InputForm/>
         <MultiplicationBtn/>
+        <MultiplicationTwo/>
      
       </div>
     </div>
