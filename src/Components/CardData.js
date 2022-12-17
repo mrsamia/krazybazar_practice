@@ -10,7 +10,7 @@ const data = [
   {
     id: 2,
     quantity:1,
-    title: "Goat Curry Pieces Frozen",
+    title: "Curry Pieces Frozn",
     amount: "700 G",
     stock: "in stock",
     price: "$21.55",
@@ -18,7 +18,7 @@ const data = [
   {
     id: 3,
     quantity:1,
-    title: "bjvfjhgfjv",
+    title: "Shan Garlic Paste",
     amount: "2 kg",
     stock: "in stock",
     price: "$21",

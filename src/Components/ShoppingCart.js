@@ -33,7 +33,7 @@ function ShoppingCart(props) {
           </div>
           <div className="d-flex justify-content-between">
             <BlackBoldText name="Total Amount" />
-            <p className="" style={{ color: "red", fontWeight: "bold" }}>
+            <p className="text-danger fw-bold" >
               $13.30
             </p>
           </div>

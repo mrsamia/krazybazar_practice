@@ -1,42 +1,35 @@
 import React from "react";
 import Searchbtn from "./Searchbtn";
 import "./component.css";
+import "../Styles/nav.css";
 import logo from "../Images/updated-logo.svg";
 import myCart from "../Images/my-cart.svg";
-import Container from 'react-bootstrap/Container';
-
-import Navbar from 'react-bootstrap/Navbar';
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 
 function Naav(props) {
   return (
-   
-
-    <Navbar expand="lg" className="bgnav" fixed="top">
-
-      <Container className="d-flex justify-content-between">
-        <div>
-          <img className="brand-logo" src={logo} alt="img" />
-        </div>
-        
-        <div className="w-100" style={{position:"relative"}}>
-          <Navbar.Toggle aria-controls="basic-navbar-nav"  />
-          <Navbar.Collapse id="basic-navbar-nav" style={{justifyContent:"center"}} >
-          <Searchbtn />
-            <div className="icon-white-rounded-bg d-flex justify-content-center align-items-center ">
-              <img src={myCart} alt="img" />
-              <span className="counter">0</span>
-              <span className="icon-title">My Cart</span>
-            </div>
-          </Navbar.Collapse>
-        </div>
+    <Navbar className="bgnav" expand="lg">
+      <Container fluid>
+        <img className="brand-logo" src={logo} alt="img" />
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll" className="nav-collapse-wrapper">
+          <Nav
+            className="me-auto my-2 my-lg-0 justify-content-center"
+            style={{ maxHeight: "100px", width: "100%" }}
+            navbarScroll
+          >
+            <Searchbtn />
+          </Nav>
+          <div className="icon-white-rounded-bg">
+            <img src={myCart} alt="img" />
+            <span className="counter">0</span>
+            <span className="icon-title">My Cart</span>
+          </div>
+        </Navbar.Collapse>
       </Container>
-
     </Navbar>
-
-
-
-
-    
   );
 }
 

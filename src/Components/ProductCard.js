@@ -56,7 +56,7 @@ function ProductCard(props) {
     <div className="container">
       <div className="row">
         {data.map((item) => (
-          <div className="col-4 pb-5">
+          <div className="col-sm-12 col-md-6 col-lg-4 pb-5">
             <div className="container card width">
               <img src={pic1} alt="img" />
               <div className="card-body">
