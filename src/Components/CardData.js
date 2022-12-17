@@ -23,5 +23,50 @@ const data = [
     stock: "in stock",
     price: "$21",
   },
+  {
+    id: 3,
+    quantity:1,
+    title: "Shan Garlic Paste",
+    amount: "2 kg",
+    stock: "in stock",
+    price: "$21",
+  },  {
+    id: 3,
+    quantity:1,
+    title: "Shan Garlic Paste",
+    amount: "2 kg",
+    stock: "in stock",
+    price: "$21",
+  },
+  {
+    id: 3,
+    quantity:1,
+    title: "Shan Garlic Paste",
+    amount: "2 kg",
+    stock: "in stock",
+    price: "$21",
+  },
+  {
+    id: 3,
+    quantity:1,
+    title: "Shan Garlic Paste",
+    amount: "2 kg",
+    stock: "in stock",
+    price: "$21",
+  },  {
+    id: 3,
+    quantity:1,
+    title: "Shan Garlic Paste",
+    amount: "2 kg",
+    stock: "in stock",
+    price: "$21",
+  },  {
+    id: 3,
+    quantity:1,
+    title: "Shan Garlic Paste",
+    amount: "2 kg",
+    stock: "in stock",
+    price: "$21",
+  }
 ];
 export default data;

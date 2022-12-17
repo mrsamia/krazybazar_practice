@@ -13,7 +13,7 @@ function CartInnerPart(props) {
   }
 
   return (
-    <div className="row d-flex align-items-center">
+    <div className="row d-flex align-items-center ">
       <div className="col-2 p-0">
         <span onClick={IncreaseHandler}>+</span>
         <br></br>
