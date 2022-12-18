@@ -6,13 +6,17 @@ import ShoppingCart from "./ShoppingCart";
 // import CartInnerPart from "./CartInnerPart";
 // import CardItems from "./CardItems";
 
+
 function ProductCard(props) {
+ 
   const [cart, setCart] = useState({
     isOpen: false,
     ShoppingCart: [],
     isQuantity: 0,
+   
   });
 
+ 
   // const addToCartHandler = (product) => {
 
   //   setCart({ ...cart, ShoppingCart: [...cart.ShoppingCart, product] });
@@ -30,6 +34,7 @@ function ProductCard(props) {
 
     if (!cart.isOpen) {
       setCart({ ...cart, isOpen: true });
+     
     }
     setCart((state) => {
 
@@ -53,7 +58,7 @@ function ProductCard(props) {
   
 
   return (
-    <div className="container">
+    <div className="container" >
       <div className="row">
         {data.map((item) => (
           <div className="col-sm-12 col-md-6 col-lg-4 pb-5">

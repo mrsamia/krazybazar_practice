@@ -16,6 +16,8 @@ import Multiplication from "./Practice/Multiplication";
 import MultiplicationBtn from "./Practice/MultiplicationBtn";
 import InputForm from "./Practice/InputForm";
 import MultiplicationTwo from "./Practice/MultiplicationTwo";
+import Todo from "./Practice/Todo";
+import TodoTwo from "./Practice/TodoTwo";
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
         <InputForm/>
         <MultiplicationBtn/>
         <MultiplicationTwo/>
+        {/* <Todo/> */}
+        <TodoTwo/>
      
       </div>
     </div>

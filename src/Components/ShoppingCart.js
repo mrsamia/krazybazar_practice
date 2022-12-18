@@ -1,23 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import BlackBoldText from "./BlackBoldText";
 import Buton from "./Buton";
 import HomeDelivery from "../Images/home-delivery-icon.svg";
 import ClickCollect from "../Images/click-collect-icon.svg";
 import data from "./CardData";
 import CartInnerPart from "./CartInnerPart";
-import "../Styles/sp.css";
+
 
 function ShoppingCart(props) {
+  
+ 
+
   return (
-    <>
-      <div className="cartWrapper ">
+    <div>
+      <div className="cartWrapper" >
         <div className="modal-header">
           <div className="d-flex align-items-center pt-3">
             <BlackBoldText name="Cart 1 Items" />
           </div>
         </div>
         <div style={{ position: "relative" }} className="cartbody">
-         <div className="">
+         <div className="" >
          {data.map((item) => {
             return <CartInnerPart title={item.title} price={item.price} />;
           })}
@@ -94,7 +97,7 @@ function ShoppingCart(props) {
           </div>
         </div> */}
       </div>
-    </>
+    </div>
   );
 }
 
