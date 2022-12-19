@@ -40,6 +40,7 @@ function clickHandler(){
           onChange={confirmPasHandler}  
         />
       </div>
+      {/* //another way this one is also correct*/}
       {/* <div>
       { password===confirmpas? <button >Submit</button>:
         <button disabled>Submit</button>}
