@@ -18,6 +18,10 @@ import InputForm from "./Practice/InputForm";
 import MultiplicationTwo from "./Practice/MultiplicationTwo";
 import Todo from "./Practice/Todo";
 import TodoTwo from "./Practice/TodoTwo";
+import InputFormTwo from "./Practice/InputFormTwo";
+import InputCalculate from "./Practice/InputCalculate";
+import TodoApp from "./Practice/TodoApp";
+import EPform from "./Practice/EPform";
 
 function App() {
   return (
@@ -37,6 +41,10 @@ function App() {
         <MultiplicationTwo/>
         {/* <Todo/> */}
         <TodoTwo/>
+        <InputFormTwo/>
+        <InputCalculate/>
+        <TodoApp/>
+        <EPform/>
      
       </div>
     </div>
