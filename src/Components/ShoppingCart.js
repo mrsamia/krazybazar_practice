@@ -20,12 +20,11 @@ function ShoppingCart(props) {
           </div>
         </div>
         <div style={{ position: "relative" }} className="cartbody">
-         <div className="" >
+         {/* <div className="" >
          {data.map((item) => {
             return <CartInnerPart title={item.title} price={item.price} />;
           })}
-
-         </div>
+         </div> */}
          <div style={{position:"absolute"}}>
          <div className="shoppingCart-footer"  >
            
@@ -55,47 +54,11 @@ function ShoppingCart(props) {
                 name="Click & Collect"
               />
               </div>
-              {/* <Buton
-                className="pickup-btn"
-                img={HomeDelivery}
-                name="Home Delivery"
-              />
-              <Buton
-                className="click-collect-btn"
-                img={ClickCollect}
-                name="Click & Collect"
-              /> */}
             </div>
          
           </div>
          </div>
         </div>
-        {/* <div className="w-100" style={{ position:"absolute", bottom: 0 }}>
-          <div>
-            <p className="order-alart">
-              Minimum order amount for home delivery is $100
-            </p>
-          </div>
-          <div className="d-flex justify-content-between">
-            <BlackBoldText name="Total Amount" />
-            <p className="text-danger fw-bold" >
-              $13.30
-            </p>
-          </div>
-
-          <div className="d-flex">
-            <Buton
-              className="pickup-btn"
-              img={HomeDelivery}
-              name="Home Delivery"
-            />
-            <Buton
-              className="click-collect-btn"
-              img={ClickCollect}
-              name="Click & Collect"
-            />
-          </div>
-        </div> */}
       </div>
     </div>
   );

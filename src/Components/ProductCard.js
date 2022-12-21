@@ -8,6 +8,11 @@ import ShoppingCart from "./ShoppingCart";
 
 
 function ProductCard(props) {
+
+  // const[cart,setCart]=useState(false)
+  // function openCartHandler(){
+  //   setCart(!cart);
+  // }
  
   const [cart, setCart] = useState({
     isOpen: false,
@@ -75,10 +80,12 @@ function ProductCard(props) {
                   <button
                     className="cart-button"
                     onClick={() => addToCartHandler(item)}
+                    // onClick={openCartHandler}
                   >
                     Add to Cart
                   </button>
                   <div>{cart.isOpen ? <ShoppingCart /> : ""}</div>
+                  {/* <div>{cart? <ShoppingCart /> : ""}</div> */}
                 </div>
               </div>
             </div>

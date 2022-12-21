@@ -4,6 +4,7 @@ import { RxCross2 } from "react-icons/rx";
 
 function CartInnerPart(props) {
   const [value, setValue] = useState(0);
+ 
 
   function IncreaseHandler() {
     setValue(value + 1);

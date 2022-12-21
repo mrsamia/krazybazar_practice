@@ -8,20 +8,8 @@ import SectionHeader from "./Components/SectionHeader";
 // import Increment from "./Components/Increment";
 import ProductCard from "./Components/ProductCard";
 import ShoppingCart from "./Components/ShoppingCart";
-import Practice from "./Practice/Practice";
-import MultistepForm from "./Practice/MultistepForm";
-import MultistepFromTwo from "./Practice/MultistepFromTwo";
-import Increment from "./Practice/Increment";
-import Multiplication from "./Practice/Multiplication";
-import MultiplicationBtn from "./Practice/MultiplicationBtn";
-import InputForm from "./Practice/InputForm";
-import MultiplicationTwo from "./Practice/MultiplicationTwo";
-import Todo from "./Practice/Todo";
-import TodoTwo from "./Practice/TodoTwo";
-import InputFormTwo from "./Practice/InputFormTwo";
-import InputCalculate from "./Practice/InputCalculate";
-import TodoApp from "./Practice/TodoApp";
-import EPform from "./Practice/EPform";
+import PracticeF from "./Practice/PracticeF";
+
 
 function App() {
   return (
@@ -31,20 +19,7 @@ function App() {
         <SectionHeader name="Special Offer" title="View All"/>
         <ProductCard/>
         {/* <ShoppingCart/> */}
-        <Practice/>
-        <MultistepForm/>
-        <MultistepFromTwo/>
-        <Increment/>
-        <Multiplication/>
-        <InputForm/>
-        <MultiplicationBtn/>
-        <MultiplicationTwo/>
-        {/* <Todo/> */}
-        <TodoTwo/>
-        <InputFormTwo/>
-        <InputCalculate/>
-        <TodoApp/>
-        <EPform/>
+      {/* <PracticeF/> */}
      
       </div>
     </div>
